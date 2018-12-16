@@ -1,26 +1,29 @@
 {
-  "name": "hyperapp-parcel",
+  "name": "hyperapp-base",
   "version": "1.0.0",
-  "description": "",
+  "description": "hyperapp + css modules + parcel = super tiny and forkable base plate",
   "main": "src/app.js",
   "scripts": {
     "start": "parcel index.html",
-    "test": "cypress run",
-    "ci": "server-test 1234",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "test": "mocha",
+    "tdd": "npm test -- --reporter min --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hyperapp/router": "^0.7.1",
-    "hyperapp": "^1.2.9",
-    "postcss-modules": "^1.4.1"
+    "@hyperapp/router": "~0.7.1",
+    "hyperapp": "~1.2.9",
+    "postcss-modules": "~1.4.1"
   },
   "devDependencies": {
-    "cypress": "^3.1.2",
-    "parcel-bundler": "^1.10.3",
-    "start-server-and-test": "^1.7.9",
-    "typescript": "^3.1.6"
+    "@babel/plugin-transform-react-jsx": "~7.2.0",
+    "@babel/preset-env": "~7.2.0",
+    "@babel/register": "~7.0.0",
+    "chai": "~4.2.0",
+    "dirty-chai": "~2.0.1",
+    "mocha": "~5.2.0",
+    "parcel-bundler": "~1.10.3"
   }
 }
