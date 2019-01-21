@@ -3,7 +3,7 @@ hyperapp + css modules + parcel + mocha & chai = super tiny and forkable base pl
 
 1. Click "+▾" and select `Import repository`
 2. Paste "https://github.com/hontas/hyperapp-base" and make up a name
-3.
+3. Clone & install dependencies
 ```shell
 git clone <your-repo-url>
 cd <your-repo-name>
