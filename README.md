@@ -9,4 +9,9 @@ git clone <your-repo-url>
 cd <your-repo-name>
 npm install
 ```
-4. Build, measure, learn!
+4. Update dependencies
+```shell
+npm i -g npm-check
+npm-check -u
+```
+5. Build, measure, learn!
