@@ -1,14 +1,13 @@
 import { h } from 'hyperapp';
-import { Link } from '@hyperapp/router';
 
-import { routes } from '../router.jsx';
+import { routes, Link } from '../router.jsx';
 import styles from './header.css';
 
-const Header = (props) => (
+const Header = () => (
   <header className={styles.header}>
     <nav className={styles.linkList}>
-      {routes.map(({ href, linkText }) => (
-        <Link to={href} className={styles.link}>
+      {routes.map(({ path, linkText }) => (
+        <Link to={path} className={styles.link}>
           {linkText}
         </Link>
       ))}

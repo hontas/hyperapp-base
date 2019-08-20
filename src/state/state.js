@@ -1,5 +1,5 @@
-import { location } from '@hyperapp/router';
-
 export default {
-  location: location.state
+  location: {
+    path: window.location.pathname
+  }
 };
