@@ -8,6 +8,7 @@ module.exports = {
     }
   },
   rules: {
+    'no-use-before-define': ['error', { functions: false }],
     'no-unused-vars': [2, { varsIgnorePattern: 'h' }],
     'react/jsx-uses-vars': 2
   },
