@@ -10,6 +10,22 @@
     "tdd": "npm test -- --reporter min --watch",
     "lint": "eslint ."
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test -- --bail --reporter min --exit"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{js,jsx,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -31,7 +47,10 @@
     "eslint-config-prettier": "~6.1.0",
     "eslint-plugin-import": "~2.18.2",
     "eslint-plugin-react": "~7.14.3",
+    "husky": "~3.0.4",
+    "lint-staged": "~9.2.3",
     "mocha": "~6.2.0",
-    "parcel-bundler": "~1.12.3"
+    "parcel-bundler": "~1.12.3",
+    "prettier": "~1.18.2"
   }
 }
