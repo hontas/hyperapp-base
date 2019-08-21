@@ -1,7 +1,7 @@
 {
   "name": "hyperapp-base",
   "version": "1.0.0",
-  "description": "hyperapp + css modules + parcel = super tiny and forkable base plate",
+  "description": "hyperapp + css modules + parcel + prettier + mocha",
   "main": "src/app.js",
   "scripts": {
     "start": "parcel index.html",
@@ -42,7 +42,7 @@
     "babel-eslint": "~10.0.2",
     "chai": "~4.2.0",
     "dirty-chai": "~2.0.1",
-    "eslint": "~6.2.0",
+    "eslint": "~6.2.1",
     "eslint-config-airbnb": "~18.0.1",
     "eslint-config-prettier": "~6.1.0",
     "eslint-plugin-import": "~2.18.2",
