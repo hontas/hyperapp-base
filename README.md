@@ -17,5 +17,5 @@ npm-check -u
 5. Build, measure, learn!
 
 ## ToDo
-- [ ] add prettier
-- [ ] remove/move routing into separate repo
+- [x] add prettier
+- [x] remove/move routing into separate repo
